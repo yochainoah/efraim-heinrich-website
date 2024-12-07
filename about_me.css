@@ -1,0 +1,350 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #banner-1400 {
+        padding: var(--sectionPadding);
+        /* 190px - 268px */
+        padding-top: clamp(11.875rem, 25vw, 16.75rem);
+        padding-bottom: 6.25rem;
+        /* clips the line from causing overflow issues for going off screen */
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+    #banner-1400 .cs-container {
+        text-align: center;
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        /* 8px - 12px */
+        gap: clamp(0.5rem, 1vw, 0.75rem);
+    }
+    #banner-1400 .cs-int-title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #banner-1400 .cs-breadcrumbs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-1400 .cs-link {
+        font-size: 1rem;
+        line-height: 1.2em;
+        text-decoration: none;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner-1400 .cs-link:last-of-type::after {
+        display: none;
+    }
+    #banner-1400 .cs-link:after {
+        /* chevron */
+        content: "";
+        width: 0.4375rem;
+        height: 0.75rem;
+        margin: 0 1rem;
+        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: block;
+    }
+    #banner-1400 .cs-link.cs-active {
+        color: var(--primary);
+    }
+    #banner-1400 .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #banner-1400 .cs-background:before {
+        /* gradient overlay */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.4;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #banner-1400 .cs-background:after {
+        /* gradient overlay */
+        content: "";
+        width: 100%;
+        height: 40%;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#000000),
+            to(rgba(0, 0, 0, 0))
+        );
+        background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    #banner-1400 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-1400 .cs-background:before {
+        width: 50%;
+        height: 100%;
+        background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(#000000),
+            to(rgba(0, 0, 0, 0))
+        );
+        background: -o-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(
+            to right,
+            #000000 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
+        opacity: 1;
+    }
+}
+
+/*-- -------------------------- -->
+<---          About Me Page     -->
+<--- -------------------------- -*/
+/* .hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+} */
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #about-me-content {
+      padding: var(--sectionPadding);
+    }
+    #about-me-content .cs-container {
+      width: 100%;
+      /* changes to 1280px at large desktop */
+      max-width: 59rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 100px */
+      gap: clamp(3rem, 6vw, 6.25rem);
+      position: relative;
+      z-index: 1;
+    }
+    #about-me-content .cs-content {
+      width: 100%;
+      /* padding left and right added on tablet */
+      padding: 0 0 4rem 0;
+      /* prevents padding from affecting height and width */
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+    }
+    #about-me-content .cs-info {
+      width: 100%;
+      /* 16px - 48px */
+      padding: 0 clamp(1rem, 5vw, 3rem);
+      /* prevents padding from affecting height and width */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /* 16px - 20px */
+      gap: clamp(1rem, 2vw, 1.25rem);
+      position: relative;
+      z-index: 1;
+    }
+    #about-me-content .cs-info:before {
+      /* grey background, moves to the cs-content at tablet */
+      content: '';
+      width: 100%;
+      height: 85%;
+      background: #F7F7F7;
+      opacity: 1;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    #about-me-content .cs-header {
+      font-size: var(--headerFontSize);
+      line-height: 1.2em;
+      text-align: inherit;
+      font-weight: 900;
+      /* 12px - 24px */
+      margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+      color: var(--headerColor);
+      display: block;
+    }
+    #about-me-content .cs-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      max-width: 43.75rem;
+    }
+    #about-me-content .cs-text {
+      /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+      margin-bottom: 1rem;
+    }
+    #about-me-content .cs-text:last-of-type {
+      margin-bottom: 0rem;
+    }
+    #about-me-content .cs-picture {
+      /* width and height changes at tablet */
+      width: 85%;
+      max-width: 21.875rem;
+      height: 20.625rem;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+    #about-me-content .cs-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* positions the top of the image to line up wiht the top of the parent */
+      object-position: top;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #about-me-content .cs-floater {
+      /* 100px - 192px */
+      width: clamp(6.25rem, 15vw, 12rem);
+      height: auto;
+      display: none;
+      position: absolute;
+      right: 3.125rem;
+      top: -4.6875rem;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #about-me-content .cs-info {
+      flex-direction: row;
+      padding: 0;
+    }
+    #about-me-content .cs-info:nth-of-type(even) .cs-content {
+      padding-left: 2.25rem;
+      padding-right: 1.25rem;
+    }
+    #about-me-content .cs-info:nth-of-type(even) .cs-content:before {
+      left: 0;
+      right: auto;
+    }
+    #about-me-content .cs-info:nth-of-type(even) .cs-picture {
+      /* sends it to the right in the 2nd position */
+      order: 2;
+    }
+    #about-me-content .cs-info:before {
+      display: none;
+    }
+    #about-me-content .cs-content {
+      /* 40px - 148px */
+      margin-top: clamp(2.5rem, 7vw, 7.8125rem);
+      /* 32px - 148px */
+      padding: clamp(2rem, 10vw, 9.375rem) 2.25rem 4rem 1.25rem;
+    }
+    #about-me-content .cs-content:before {
+      /* grey background */
+      content: '';
+      width: 120%;
+      height: 100%;
+      background: #F7F7F7;
+      opacity: 1;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+    #about-me-content .cs-picture {
+      /* width and height changes again on larger desktop */
+      width: 38%;
+      max-width: 16.25rem;
+      /* 260px - 348px */
+      height: clamp(16.25rem, 36vw, 21.75rem);
+    }
+    #about-me-content .cs-floater {
+      display: block;
+    }
+  }
+  /* Large Desktop 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #about-me-content .cs-container {
+      max-width: 80rem;
+    }
+    #about-me-content .cs-info {
+      align-items: stretch;
+    }
+    #about-me-content .cs-picture {
+      height: auto;
+      min-height: 43.5rem;
+      width: 32.625rem;
+      max-width: 32.625rem;
+      margin-bottom: 4rem;
+      /* prevents flexbox from squishing it */
+      flex: none;
+    }
+  }
+  /* Larger Desktop 1600px */
+  @media only screen and (min-width: 100rem) {
+    #about-me-content .cs-info:nth-of-type(even) .cs-picture {
+      margin-left: 0;
+    }
+    #about-me-content .cs-picture {
+      margin-left: -5.5rem;
+    }
+  }
+                                      

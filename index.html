@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franc Heinrich</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>                                    
+    <main id="main-content" >
+        <!-- ============================================ -->
+        <!--                 Navigation                   -->
+        <!-- ============================================ -->
+        <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="#hero-1785" class="cs-logo" aria-label="back to home">
+                    <img src="img/FRANC HEINRICH LOGO-01.svg" alt="logo"  aria-hidden="true" decoding="async">
+                </a>
+                <!-- width="197" height="43" -->
+                <!--Navigation List-->
+                <nav class="cs-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="#hero-1785" class="cs-li-link cs-active">
+                                    Home
+                                </a>
+                            </li>
+                            <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                            <li class="cs-li cs-dropdown" tabindex="0">
+                                <a href="#services-1176" class="cs-li-link">
+                                    Services
+                                    <img class="cs-drop-icon" src="img/dropdown-icon.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </a>
+                                <ul class="cs-drop-ul">
+                                    <li class="cs-drop-li">
+                                        <a href="#services-1176" class="cs-li-link cs-drop-link">Wills</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="#services-1176"class="cs-li-link cs-drop-link">Estates</a>
+                                    </li>
+                                    <li class="cs-drop-li">
+                                        <a href="#services-1176" class="cs-li-link cs-drop-link">Public Nottary</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cs-li">
+                                <a href="#meet-us-304" class="cs-li-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="#reviews-607" class="cs-li-link">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <!-- <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    Our Work
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    FAQ
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </nav>
+                <a href="#contact-307" class="cs-button-solid cs-nav-button">Contact Me</a>
+                <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+                <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                    <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                    <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+                </button> -->
+            </div>
+        </header>
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+        <section id="hero-1785">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Trusted Legal Counsel</span>
+                    <h1 class="cs-title">Protecting Your Rights, Securing Your Future</h1>
+                    <p class="cs-text">
+                        Expert legal guidance with compassion and precision. We navigate complex legal challenges to provide clear, strategic solutions tailored to your unique needs.
+                    </p>
+                    <div class="cs-button-group">
+                        <a href="" class="cs-button-solid cs-button1">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <!-- <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-hero.png"> -->
+                <img loading="lazy" decoding="async" src="img/pexels-pixabay-261679.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+            </picture>
+
+            <!-- <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" > -->
+            <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+            <img class="cs-graphic cs-graphic-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+        </section>
+                                          
+        <!-- ============================================ -->
+        <!--                  Services                    -->
+        <!-- ============================================ -->
+        <section id="services-1176">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">My services</span>
+                    <h2 class="cs-title">My Practice Areas</h2>
+                    <p class="cs-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi debitis nulla nihil
+                        consequuntur neque perspiciatis praesentium asperiores! Doloremque, reiciendis?
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img src="img/greek-temple.svg" alt="black greek temple">
+                        </picture>
+                        <h3 class="cs-h3">Wills</h3>
+                        <p class="cs-item-text">
+                            What is Check Engine Light? There are many variations of passages of Lorem Ipsum available, but
+                            the
+                            majority have...
+                        </p>
+                        <a href="" class="cs-link">
+                            Read More
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="img/arrow-right.svg" alt="icon"
+                                width="20" height="20" aria-hidden="true" />
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img src="img/gavel.svg" alt="black greek temple">
+                        </picture>
+                        <h3 class="cs-h3">Estates</h3>
+                        <p class="cs-item-text">
+                            Our featured services Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                            fugit,
+                            sed quia consequuntur...
+                        </p>
+                        <a href="" class="cs-link">
+                            Read More
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="img/arrow-right.svg"  alt="icon"
+                                width="20" height="20" aria-hidden="true" />
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img src="img/persons.svg" alt="icon"/>
+                        </picture>
+                        <h3 class="cs-h3">Public Nottary</h3>
+                        <p class="cs-item-text">
+                            Our services Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                            quia
+                            consequuntur magni...
+                        </p>
+                        <a href="" class="cs-link">
+                            Read More
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="img/arrow-right.svg"  alt="icon"
+                                width="20" height="20" aria-hidden="true" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--                Meet The Team                 -->
+        <!-- ============================================ -->
+
+        <section id="meet-us-304">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Meet Me</span>
+                    <h2 class="cs-title">Estate Law and Notarial Services, 
+                        Simplified.</h2>
+                    <p class="cs-text">
+                        Aenean tincidunt id mauris idology auctor. Donec at ligula lacus. Nulla dig nissimmi quis neque interdum. 
+                    </p>
+                    <a href="about_me.html" class="cs-button-solid" id="more-about-me-btn">More About Me</a>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <div class="cs-info">
+                            <span class="cs-name">James McGuil</span>
+                            <span class="cs-job">Civil Lawyer</span>
+                        </div>
+                        <!--Background Image-->
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer1-m.jpg">
+                            <source media="(min-width: 768px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer1.jpg">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer1.jpg" alt="lawyer" width="305" height="407">
+                        </picture>
+                    </li>
+                    <li class="cs-item">
+                        <div class="cs-info">
+                            <span class="cs-name">Guy Hawkins</span>
+                            <span class="cs-job">Business Lawyer</span>
+                        </div>
+                        <!--Background Image-->
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer2-m.jpg">
+                            <source media="(min-width: 768px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer2.jpg">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer2.jpg" alt="lawyer" width="305" height="407">
+                        </picture>
+                    </li>
+                    <!-- <li class="cs-item">
+                        <div class="cs-info">
+                            <span class="cs-name">Jente Williams</span>
+                            <span class="cs-job">Partner / Criminal Lawyer</span>
+                        </div>
+                        Background Image
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer3-m.jpg">
+                            <source media="(min-width: 768px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer3.jpg">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/lawyer3.jpg" alt="lawyer" width="305" height="407">
+                        </picture>
+                    </li> 
+                    -->
+                </ul>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--                   Reviews                    -->
+        <!-- ============================================ -->
+
+        <section id="reviews-607">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Testimonials</span>
+                    <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+                    <p class="cs-text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <img class="cs-icon" src="img/qoutes.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Loving the color!</h3>
+                        <p class="cs-item-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                        </p>
+                        <span class="cs-name">Daniel</span>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-icon" src="img/qoutes.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Affordable</h3>
+                        <p class="cs-item-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                        </p>
+                        <span class="cs-name">Daniel</span>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-icon" src="img/qoutes.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Professional and the best!</h3>
+                        <p class="cs-item-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                        </p>
+                        <span class="cs-name">Daniel</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ============================================ -->
+        <!--                   Contact                    -->
+        <!-- ============================================ -->
+
+        <section id="contact-307">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact Us</span>
+                    <h2 class="cs-title">Get In Touch</h2>
+                    <p class="cs-text">
+                        We support businesses through periods of expansion, succession, and all other important transitions.
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="icon" width="24" height="24">
+                            <a href="tel:555-555-4555" class="cs-link">(555) 555-4555</a>
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="icon" width="24" height="24">
+                            <a href="mailto:info@example.com" class="cs-link">info@example.com</a>
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="icon" width="24" height="24">
+                            <a href="" class="cs-link">121 Fake St, Melbourne VIC<br> 3000, Australia</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Form-->
+                <form action = "https://formspree.io/f/xrbgdjkd" class="cs-form" id="cs-form-307" name="Contact Form" method="post">
+                    <label class="cs-label">
+                        Name
+                        <input class="cs-input" required type="text" id="name-307" name="name" placeholder="Name">
+                    </label>
+                    <label class="cs-label cs-email">
+                        Email
+                        <input class="cs-input" required type="text" id="email-307" name="email" placeholder="Email">
+                    </label>
+                    <label class="cs-label cs-phone">
+                        Phone
+                        <input class="cs-input" required type="text" id="phone-307" name="phone" placeholder="Phone">
+                    </label>
+                    <label class="cs-label">
+                        Messagee
+                        <textarea class="cs-input cs-textarea" required name="Message" id="message-307" placeholder="Write message..."></textarea>
+                    </label>
+                    <button class="cs-button-solid cs-submit" type="submit">Make an Appointment</button>
+                </form>
+                <div id="thank-you-message" style="display: none;" class="cs-thank-you">
+                    Thank you for your message! We'll get back to you soon.
+                </div>
+            </div>
+            <!--background image-->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/round-table-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/round-table.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/round-table.jpg" alt="round table" width="275" height="132">
+            </picture>
+        </section>
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-308">
+            <div class="cs-container">
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a aria-label="go back to home" class="cs-logo" href="#hero-1785">
+                        <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="img/FRANC HEINRICH LOGO-02.svg" alt="logo" >
+                    </a>
+                    <p class="cs-text">
+                        Aenean tincidunt id mauris idology auctor. Donec at ligula lacus. Nulla dig nissimmi quis neque interdum. An Ohio man allegedly punched.
+                    </p>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Sitemap</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#hero-1785">Home</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#services-1176">Services</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#meet-us-304" >About</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#reviews-607">Testimonials</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#contact-307">Contact</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Categories</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#services-1176">Wills</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#services-1176">Estates</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="#services-1176">Public Nottary</a>
+                    </li>
+                </ul>
+                <!-- Contact Info -->
+                <!-- <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+                        <a class="cs-nav-link cs-phone" href="tel: 123-456-7890">(123) 456-7890</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+                        <a class="cs-nav-link cs-email" href="mailto:info@codestitch.com">info@codestitch.com</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+                        <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener">
+                            123 Avenue Street<br> Oak Harbor, WA 98101
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="cs-bottom">
+                <span class="cs-copyright">© Copyright 2022 - <a class="cs-copyright-link" href="">Stitch Law Design</a></span>
+            </div>
+        </footer>
+                                                                                    
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+<script src="https://kit.fontawesome.com/ec5301e979.js" crossorigin="anonymous"></script>
+</html>
